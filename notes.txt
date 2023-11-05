@@ -1,23 +1,11 @@
-1) To push our code to production, the code should be optimized (remove comments,
-    remove console.log, have to minify the code)
-2) Optimize images if app has one, a lot of processing needs to be done before you
-    push code to production
-3) Lot of other packages needed to create React fast, npm does not stand for node packages manager
-4) There are 2 types of dependencies that we can install -dev dependencies and -normal dependencies
-5) ^ => automatically updates to minor and patch latest version eg: 2.8.3 => 2.8.4 or 2.8.9 => 2.9.0
-6) ~ => automatically updates to patch latest version eg: 2.8.3 => 2.8.4
-7) when you want to know the exact version of installed package see package-lock.json
-8) package.json is configuration file for npm
-9) ignite our app using: npx parcel index.html
-10) npx means executing the package
-11) Normal JS file does not have import, so you have to tell that it is a module
-12) Parcel does the following things for us
-    - Dev build
-    - Local server
-    - HMR (Hot Module Replacement) reload brower on save
-    - Image optimization
-    - Minification
-    - Bundling
-    - Compress
-    - Differential bundling (support for older browser)
-13) Tree shaking (remove unused code)
+1) JSX is not HTML inside JS, JSX is a HTML like syntax.
+2) JS engine understands ECMAScript, does not understand JSX
+3) Parcel transpiles (converted) JSX to browser understanding JS code
+4) Parcel gives responsibiltied of transpiling to Babel
+5) JSX => React.createElement => React Element (JS Object) => HTML element (render)
+6) There are 2 types of components in React
+    - Class based component
+    - Functional component
+7) React functionl component is just normal JS function which returns JSX.
+8) Component Composition: Use of a component inside another
+9) JSX prevents cross site scripting attack

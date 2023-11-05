@@ -1,39 +1,25 @@
 import React from "react";
-import ReactDOM from 'react-dom/client';
+import ReactDOM from "react-dom/client";
 
-const domNode = document.getElementById('root');
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
-const heading = React.createElement("h1", { className: "heading" }, "I love react");
+// React Element
+const para = <p>I am a para</p>;
 
-const h1 = React.createElement("h1", {}, "Grapes")
+// React Functional Component
+const HeadingComponent = () => {
+    return <h1>hello world</h1>
+}
 
-const h2 = React.createElement("h2", {}, "Mango");
+console.log(HeadingComponent());
+console.log(<HeadingComponent/>);
 
-const cDiv = React.createElement("div", {
-    id: "child"
-}, [h1, h2])
+const App = () => {
+    return (<>
+        <HeadingComponent/>
+        {para}
+        {HeadingComponent()}
+    </>);
+}
 
-const pDiv = React.createElement("div", {
-    id: "parent"
-}, cDiv);
-
-const root = ReactDOM.createRoot(domNode);
-
-console.log(root);
-console.log(pDiv)
-
-
-root.render(pDiv);
-
-/*
-<div id="parent">
-    <div id="child">
-        <h1>I AM LOST</h1>
-        <h2>OOTY</h2>
-    </div>
-</div>
-
-1) WHAT IS CDN
-
-2) WHAT IS crossorigin
-*/
+root.render(<App/>)
