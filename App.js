@@ -8,16 +8,6 @@ const d = ZOMATO_API_CALL_RES.sections.SECTION_SEARCH_RESULT;
 
 const data = [
   {
-    id: 123,
-    resturant_name: "Starbucks Coffee",
-    ratings: 4.3,
-    cuisine: "Cafe, coffee, Beverage",
-    cost: "300 for one",
-    time: 22,
-    image_url:
-      "https://b.zmtcdn.com/data/pictures/chains/4/43344/163aa2d5720ce597203370afb1357c90_o2_featured_v2.jpg",
-  },
-  {
     id: 471,
     resturant_name: "Aadeshwari Biryani Centre",
     ratings: 4.2,
@@ -26,6 +16,16 @@ const data = [
     time: 31,
     image_url:
       "https://b.zmtcdn.com/data/pictures/4/20586304/249d982fd2520500ce56ff41a24397bd_o2_featured_v2.jpg",
+  },
+  {
+    id: 123,
+    resturant_name: "Starbucks Coffee",
+    ratings: 4.3,
+    cuisine: "Cafe, coffee, Beverage",
+    cost: "300 for one",
+    time: 22,
+    image_url:
+      "https://b.zmtcdn.com/data/pictures/chains/4/43344/163aa2d5720ce597203370afb1357c90_o2_featured_v2.jpg",
   },
   {
     id: 934,
