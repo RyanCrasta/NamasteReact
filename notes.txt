@@ -1,11 +1,29 @@
-1) JSX is not HTML inside JS, JSX is a HTML like syntax.
-2) JS engine understands ECMAScript, does not understand JSX
-3) Parcel transpiles (converted) JSX to browser understanding JS code
-4) Parcel gives responsibiltied of transpiling to Babel
-5) JSX => React.createElement => React Element (JS Object) => HTML element (render)
-6) There are 2 types of components in React
-    - Class based component
-    - Functional component
-7) React functionl component is just normal JS function which returns JSX.
-8) Component Composition: Use of a component inside another
-9) JSX prevents cross site scripting attack
+LECTURE 4 (TALK IS CHEAP SHOW ME CODE)
+
+1) Make UI mock/planning before starting to code, here we made food ordering app
+
+2)How components are planned
+    a) Header
+        -Logo
+        -Nav Items
+    b) Body
+        -Search
+        -Restaurant Container
+            --Restaurant Card
+    c) Footer
+        -Copyright
+        -Links
+        -Address
+        -Contact information
+
+3) A component name should start with a capital letter.
+
+4) Config-driven UI: Website driven by data configs. The config comes from the backend. For eg: Some offers are targeted to particular areas.
+
+5) Whenever ur looping any component give key prop to it.
+
+6) If there are many components as siblings it is good practice that you provide key prop, so that React can rerender what is actually updated.
+
+7) For eg: There are 5 list items and another list item is added on the top, react will have to rerender all the list items, coz React cannot identify every list item uniquely by it’s own you need to provide key.
+
+8) Do not use the index of an array as key if the order of items may change (https://robinpokorny.com/blog/index-as-a-key-is-an-anti-pattern/)
