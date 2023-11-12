@@ -1,4 +1,4 @@
-LECTURE 4 (TALK IS CHEAP SHOW ME CODE)
+LECTURE 4 TALK IS CHEAP SHOW ME CODE
 
 1) Make UI mock/planning before starting to code, here we made food ordering app
 
