@@ -1,11 +1,21 @@
-1) JSX is not HTML inside JS, JSX is a HTML like syntax.
-2) JS engine understands ECMAScript, does not understand JSX
-3) Parcel transpiles (converted) JSX to browser understanding JS code
-4) Parcel gives responsibiltied of transpiling to Babel
-5) JSX => React.createElement => React Element (JS Object) => HTML element (render)
-6) There are 2 types of components in React
-    - Class based component
-    - Functional component
-7) React functionl component is just normal JS function which returns JSX.
-8) Component Composition: Use of a component inside another
-9) JSX prevents cross site scripting attack
+LECTURE 5: LET’S GET HOOKED
+
+1) The best practice is to make separate files for separate components.
+
+2) You can either use .js or .jsx extension.
+
+3) Put all the CONSTANTS in a utils folder
+
+4) There are 2 different types of exports default and named export. When you have to export multiple things use named export. In one file you can only write on default export.
+
+5) While importing use Curly brackets and exact name if you are using default export. If you are using default export just use any name while importing.
+
+6) React is faster because it can do quick DOM manipulation.
+
+7) A hook is just a normal JS function given to us by React.
+
+8) Whenever a state variable updates, React rerenders the component.
+
+9) React creates a virtual DOM from the component tree, it is a representation of the actual DOM.
+
+10) Diffing Algorithm: Finds out the difference between two Virtual DOM’s.
