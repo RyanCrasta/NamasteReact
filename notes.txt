@@ -1,0 +1,31 @@
+LECTURE 6: EXPLORING THE WORLD
+
+1) Traditionally code architecture was done in Monolith where in all the code for API, UI, Authentication, Database, sending notifications is at one place.
+
+2) Microservices you can think of like one big project divided into many smaller projects. We can have one service for Backend, one for UI, another one for Authentication and so on and so forth. This is known as single responsibility principle.
+
+3) All these services run on their own specific port, and at the end of day all these ports get mapped to the domain name.
+
+4) You can use different languages in a microservices architecture.
+
+5) Two ways how UI app fetches data from backend
+    - When app loads, just make API call to fetch data and when data is received render it to UI.
+    - As soon as app loads, render UI. Then make an API call and rerender app with the data received.
+
+6) In the first approach until the time data is received our page is kinda frozen, and then once data is received user sees, which is a poor UX. In the second approach we render whatever we can (skeleton) and then slowly website loads.
+
+7) useEffect’s callback function is called after the component renders.
+
+8) Browser blocks the calling of API from one origin to another origin. If there is an origin mismatch browser blocks that API call this is CORS policy.
+
+9) Whenever the state variable changes React will rerender the component.
+
+10) Have you thought how
+    const [btnName, setBtnName] = useState(’Login’);
+    setBtnName(‘Logout’);
+
+    Since btnName is const still value gets updated?
+
+    It is because when we call setBtnName component rerenders and a new btnName is created with the updated value.
+
+11) React is rerendering the whole component but only updates necessary tags inside DOM.
